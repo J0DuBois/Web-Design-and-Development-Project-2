@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+h1{
+    color:#B05BF9;
+    font-size: 4rem;
+}
+
+h2{
+    color:#B05BF9;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h3{
+    color: #B05BF9;
+    padding: 10px;
+}
+
+p{
+    color: #CAE9FF;
+}
+
+.bigText{
+    color:#5FA8D3;
+}
+
+a{
+    text-decoration: none;
+    color: #CAE9FF;
+}
+
+ul li{
+    list-style-type: none;
+}
+hr{
+    background-color: #CAE9FF;
+}
+
+/*---------------Navigation----------------*/
+header{
+    background-color: #000;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;  
+    max-width: 1300px;
+    margin: auto;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.active{
+    color: #B05BF9;
+}
+/*-----------------Hero----------------*/
+.hero{
+    background-color: #131313;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1300px;
+    margin: auto;
+    align-items: center;
+    padding: 25px;
+}
+
+.col-2{
+    padding: 20px;
+    margin-bottom: 36px;
+}
+
+
+.col-2 .bigText{
+    font-size: 3rem;
+    padding-bottom: 40px;
+}
+
+.col-2 .success{
+    height: 450px;
+    padding: 10px 0;
+}
+
+.btn{
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    background-color: #FE5F55;
+    color: #000;
+    font-size: 20px;
+}
+
+/*------------Services-----------*/
+.services{
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 108vh;
+    
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service_card{
+    margin: 1rem;
+    height: 475px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(17,17,17,0.6) 100%),
+    url('../Images/Tutoring.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.service_card:nth-child(2){
+    background-image: linear-gradient(to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(17,17,17,0.6) 100%),
+    url('../Images/Planner.jpg');
+}
+
+
+.service_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    top: 400px;
+
+}
+.title{
+    color: #5FA8D3;
+    font-size: 2rem;
+}
+
+
+
+.service_card .btn2{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #FE5F55;
+    
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*------------Footer-------------*/
+footer{
+    background-color: #000;
+}
+
+.row3{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+}
+
+.col-4{
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.col-4 ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.copy{
+    text-align: center;
+    padding-top: 10px;
+}
+
