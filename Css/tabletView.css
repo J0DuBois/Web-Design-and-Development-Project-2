@@ -1,0 +1,38 @@
+@media only screen and (max-width: 800px)  {
+
+    .navbar{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul{
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu_bar{
+        display: none;
+    }
+
+    .row{
+        grid-template-columns: auto;
+    }
+
+    .heroContent{
+        text-align: center;
+    }
+
+    .services{
+        height: 1150px;
+    }
+
+    .service_card{
+        width: 300px;
+    }
+
+
+    .col-4{
+        flex-basis: 50%;
+    }
+}

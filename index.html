@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="Css/styles.css">
+        <link rel="stylesheet" href="Css/tabletView.css">
         <link rel="stylesheet" href="Css/mobileView.css">
         
     </head>
@@ -12,9 +13,16 @@
     <body>
         <header>
             <div class="navbar">
+                
                 <img src="Images/Lag Affairs-test.png" alt="">
 
-                <nav>
+                <div class="menu_bar" id="mobile-menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>  
+
+                <nav class = "navbar__menu">
                     <ul>
                         <li>
                             <a href="" class="active">Home</a>
@@ -33,6 +41,7 @@
                         </li>
                     </ul>
                 </nav> 
+                          
             </div>
         </header>
 
@@ -59,7 +68,7 @@
             <!--Services-->
             <div class="services">
                 <h2>See what we offer</h2>
-                <div class="row2">
+                <div class="row">
                     <div class="service_card">
                         <div class="service_content">
                             <p class="title">Tutoring</p>
@@ -81,7 +90,9 @@
         
         <!--Footer-->
         <footer>
-            <div class="row3">
+            <img src="Images/Lag Affairs-test.png" alt="" class="footer_logo">
+            <div class="footer_row">
+                
                 <div class="col-4">
                     <h3>About us</h3>
                     <ul>
@@ -129,5 +140,6 @@
             </div>
             <p class="copy">&copy Lag Affiars 2022. All rights reserved</p>
         </footer>
+        <script src="JavaScript/myScript.js"></script>
     </body>
 </html>

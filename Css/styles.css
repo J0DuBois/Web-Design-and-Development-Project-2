@@ -16,8 +16,10 @@ h2{
 }
 
 h3{
-    color: #B05BF9;
+    color: #5FA8D3;
     padding: 10px;
+    margin-top: 5px;
+    font-size: 2rem;
 }
 
 p{
@@ -31,13 +33,15 @@ p{
 a{
     text-decoration: none;
     color: #CAE9FF;
+    padding: 25px;
+}
+
+li a:hover{
+    background-color: #131313;
 }
 
 ul li{
     list-style-type: none;
-}
-hr{
-    background-color: #CAE9FF;
 }
 
 /*---------------Navigation----------------*/
@@ -62,12 +66,33 @@ nav{
 
 nav ul li{
     display: inline-block;
-    padding: 0 25px;
 }
 
 .active{
     color: #B05BF9;
 }
+    /*----Menu Bar----*/
+    .menu_bar{
+        display: none;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #CAE9FF;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+    
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+      }
+      
+    .change .bar2 {opacity: 0;}
+      
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
 /*-----------------Hero----------------*/
 .hero{
     background-color: #131313;
@@ -93,7 +118,10 @@ nav ul li{
     padding-bottom: 40px;
 }
 
-.col-2 .success{
+.success{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 450px;
     padding: 10px 0;
 }
@@ -105,6 +133,11 @@ nav ul li{
     background-color: #FE5F55;
     color: #000;
     font-size: 20px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #f95b5b;
 }
 
 /*------------Services-----------*/
@@ -115,12 +148,6 @@ nav ul li{
     align-items: center;
     height: 108vh;
     
-}
-
-.row2{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .service_card{
@@ -153,6 +180,7 @@ nav ul li{
     top: 400px;
 
 }
+
 .title{
     color: #5FA8D3;
     font-size: 2rem;
@@ -174,9 +202,17 @@ footer{
     background-color: #000;
 }
 
-.row3{
+.footer_logo{
+    display: block;
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_row{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 25px;
     max-width: 1300px;
@@ -193,7 +229,9 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
+.col-4 ul li a{
+    padding: 10px;
+}
 .copy{
     text-align: center;
     padding-top: 10px;
