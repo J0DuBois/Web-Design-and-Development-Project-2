@@ -1,53 +1,6 @@
 @media only screen and (max-width: 600px)  {
-    .navbar{
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    nav{
-        display: none;
-        justify-content: center;
-    }
-
-    nav ul li{
-        display: grid;
-        grid-template-columns: 100%;
-        text-align: center;
-        padding: 5px;
-    }
-
-    .is-active{
-        display: block;
-    }
-
-    .menu_bar{
-        display: inline-block;
-        cursor: pointer;
-        padding: 25px;
-    }
-
-    .hero{
-        grid-template-columns: auto;
-    }
-    .heroContent{
-        text-align: center;
-    }
-
     .services{
         height: 1150px;
     }
- 
 
-     .col-4{
-        padding: 25px;
-        flex-basis: 50%;
-    } 
-
-    .row{
-        grid-template-columns: 100%;
-      }
-
-    .service_card{
-        width: 300px;
-    }
 }

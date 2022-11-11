@@ -1,38 +1,58 @@
-@media only screen and (max-width: 800px)  {
-
+@media only screen and (max-width: 914px)  {
     .navbar{
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-areas:
+          'header header header header header menu'
+          'main main main main main main';
     }
 
-    nav ul{
-        padding: 25px;
-        display: flex;
-        justify-content: center;
+    .logo{
+        grid-area: header;
+    }
+
+    nav{
+        display: none;
+        overflow: hidden;
+    }
+
+    nav ul li{
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .is-active{
+        display: grid;
+        grid-area: main;
     }
 
     .menu_bar{
-        display: none;
+        display: inline-block;
+        cursor: pointer;
+        padding: 25px;
+        grid-area: menu;
     }
 
-    .row{
+    .hero{
         grid-template-columns: auto;
     }
-
     .heroContent{
         text-align: center;
     }
 
     .services{
-        height: 1150px;
+        height: 1250px;
     }
+ 
 
-    .service_card{
-        width: 300px;
-    }
-
-
-    .col-4{
+     .col-4{
+        padding: 25px;
         flex-basis: 50%;
-    }
+    } 
+
+    .row{
+        grid-template-columns: 100%;
+      }
+
 }
